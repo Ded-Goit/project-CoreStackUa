@@ -2,83 +2,901 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project-CoreStackUa/assets/favicon-47QanH40.png" />
+    <link rel="icon" type="image/svg+xml" href="/project-CoreStackUa/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/project-CoreStackUa/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-CoreStackUa/assets/index-D3X9k8bU.css">
+    <link rel="modulepreload" crossorigin href="/project-CoreStackUa/assets/vendor-ZvUhMNru.js">
+    <link rel="stylesheet" crossorigin href="/project-CoreStackUa/assets/vendor-D2Xkpl5Y.css">
+    <link rel="stylesheet" crossorigin href="/project-CoreStackUa/assets/index-CEXTbMq7.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <p>student section developer</p>
-  </div>
-</header>
+    <header>
+      <div class="container header-container">
+  <nav class="header-nav">
+    <a class="header-logo" href="./index.html"
+      >Lloyd<span class="green-color">Jefferson.</span></a
+    >
+    <ul class="header-nav-list">
+      <li><a href="#about" class="header-nav-link">About Me</a></li>
+      <li><a href="#projects" class="header-nav-link">Projects</a></li>
+      <li><a href="#contacts" class="header-nav-link">Contacts</a></li>
+    </ul>
+    <a class="header-order-link" href="#" data-scrol-down>Order the project</a>
+  </nav>
 
-    <section class="modal">
-  <div class="container">
-    <p>student section developer</p>
+  <button type="button" class="menu-button" data-menu-handler>
+    <svg class="menu-icon" width="32" height="32">
+      <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-burger-symbols-menu"></use>
+    </svg>
+  </button>
+</div>
+
+<!--mobile menu-->
+
+<div class="mobile-menu" data-menu>
+  <div class="mobile-menu-container">
+    <a class="header-logo" href="./index.html"
+      >Lloyd<span class="green-color">Jefferson.</span></a
+    >
+    <button class="mobile-menu-close" type="button" data-menu-handler>
+      <svg class="svg-icon-close" width="32" height="32">
+        <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-x"></use>
+      </svg>
+    </button>
+
+    <div class="menu-wrapper">
+      <ul class="mobile-nav-menu">
+        <li class="mobile-nav-list">
+          <a class="mobile-nav-link" href="#about" data-menu-handler
+            >About Me</a
+          >
+        </li>
+        <li class="mobile-nav-list">
+          <a class="mobile-nav-link" href="#projects" data-menu-handler
+            >Projects</a
+          >
+        </li>
+        <li class="mobile-nav-list">
+          <a class="mobile-nav-link" href="#contacts" data-menu-handler
+            >Contacts</a
+          >
+        </li>
+      </ul>
+      <a class="mobile-order-link" href="#" data-scrol-down
+        >Order the project</a
+      >
+    </div>
   </div>
-</section>
+</div>
+
+    </header>
 
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="hero">
-  <div class="container">
-    <p>student section developer</p>
+      <section class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-describe">
+      <h1 class="hero-title">
+        HELLO, I AM <span class="green-color">FULLSTACK DEVELOPER</span>
+      </h1>
+
+      <picture>
+        <source
+          srcset="/project-CoreStackUa/assets/desc_hero_portrait_of_the_developer-BPI51aCA.jpg 1x, /project-CoreStackUa/assets/desc_hero_portrait_of_the_developer@2x-BLX3p4qT.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/project-CoreStackUa/assets/tab_hero_portrait_of_the_developer-B6XLK0rg.jpg 1x, /project-CoreStackUa/assets/tab_hero_portrait_of_the_developer@2x-Cckdec6g.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/project-CoreStackUa/assets/mobile_hero_portrait_of_the_developer-BZ_tmMVh.jpg 1x, /project-CoreStackUa/assets/mobile_hero_portrait_of_the_developer@2x-BfNjG767.jpg 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="hero-img"
+          src="/project-CoreStackUa/assets/desc_hero_portrait_of_the_developer-BPI51aCA.jpg"
+          alt="fhoto"
+        />
+      </picture>
+
+      <p class="hero-text">
+        I work with people all over the world to create
+        <span class="green-color">impressive</span> and
+        <span class="green-color">functional websites</span> that reflect each
+        client’s unique personality.
+      </p>
+    </div>
+  </div>
+  <ul class="hero-list">
+    <li class="hero-item">
+      <a
+        href="https://www.instagram.com/goitclub/"
+        class="hero-link"
+        target="_blank"
+        >Instagram</a
+      >
+    </li>
+    <li class="hero-item">
+      <a
+        href="https://www.facebook.com/goITclub/"
+        class="hero-link"
+        target="_blank"
+        >Facebook</a
+      >
+    </li>
+    <li class="hero-item">
+      <a
+        href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+        target="_blank"
+        class="hero-link"
+        >Linkedin</a
+      >
+    </li>
+    <li class="hero-item">
+      <a
+        href="https://github.com/Nickolay1990/core-stack.git"
+        target="_blank"
+        class="hero-link"
+        >GitHub</a
+      >
+    </li>
+  </ul>
+</section>
+
+      <section id="about" class="about-me-section">
+  <div class="container about-me-div-container">
+    <h2 id="abaut" class="about-me-h">
+      ABOUT <span class="green-color">ME</span>
+    </h2>
+
+    <div class="about-me-tab">
+      <div class="about-me-div-computer">
+        <div class="about-me-div-img">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/project-CoreStackUa/assets/desc_about_me_portrait_of_the_developer-BwIHsNfZ.jpg 1x, /project-CoreStackUa/assets/desc_about_me_portrait_of_the_developer@2x-wfSOhxoU.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/project-CoreStackUa/assets/tab_about_me_portrait_of_the_developer-Cp__ictk.jpg 1x, /project-CoreStackUa/assets/tab_about_me_portrait_of_the_developer@2x-DMELxArh.jpg 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/project-CoreStackUa/assets/mobile_about_me_portrait_of_the_developer-DekfzI-P.jpg 1x, /project-CoreStackUa/assets/mobile_about_me_portrait_of_the_developer@2x-BP2ppb5j.jpg 2x"
+            />
+
+            <img
+              src="/project-CoreStackUa/assets/mobile_about_me_portrait_of_the_developer-DekfzI-P.jpg"
+              alt="developer"
+              srcset="/project-CoreStackUa/assets/mobile_about_me_portrait_of_the_developer-DekfzI-P.jpg 2x"
+            />
+          </picture>
+        </div>
+        <div class="about-me-div bottom-padding">
+          <h3 class="about-me-all-h">BIO</h3>
+          <p class="about-me-p-bio">
+            I'm Lloyd Jefferson, a talented programmer specializing in software
+            development. My expertise spans various programming languages and
+            technologies, and I am dedicated to continually enhancing my skills.
+            I thrive on seeking unconventional and creative solutions to
+            problems, leveraging a high level of analytical skills to
+            effectively tackle even the most challenging tasks.
+          </p>
+          <p class="about-me-p-bio">
+            Adaptable to both independent and team-oriented work, I collaborate
+            seamlessly with colleagues, exchanging ideas and finding optimal
+            solutions. My professional maturity enables me to navigate
+            challenges and stressful situations with a calm demeanor,
+            maintaining a consistently high quality of work. Committed to
+            self-improvement, I actively engage in studying new technologies and
+            practices to stay current with the latest innovations in the field.
+          </p>
+        </div>
+      </div>
+      <div class="about-me-div-comp">
+        <div class="about-me-div about-me-div-tab">
+          <h3 class="about-me-all-h">EDUCATION</h3>
+          <ul class="about-me-ul-all">
+            <li class="about-me-li">
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </li>
+            <li class="about-me-li">
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </li>
+            <li>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+          </ul>
+        </div>
+
+        <div class="about-me-div-tab">
+          <h3 class="about-me-all-h">ROLE</h3>
+          <ul class="about-me-ul-all">
+            <li class="about-me-li">Frontend development</li>
+            <li class="about-me-li">HeadlessCMS, Wordpress</li>
+            <li>Blender (enjoy)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-      <section class="aboutme">
-  <div class="container">
-    <p>student section developer</p>
+      <section class="tech-skills">
+  <h2 class="visually-hidden">Tech Skills</h2>
+  <div class="marquee marquee-horizontal">
+    <div class="marquee-inner">
+      <p class="marquee-line">
+        <span class="dot dot-horizontal"></span> HTML/CSS
+        <span class="dot dot-horizontal"></span> JavaScript
+        <span class="dot dot-horizontal"></span> React
+        <span class="dot dot-horizontal"></span> Node.js
+        <span class="dot dot-horizontal"></span> React Native
+        <span class="dot dot-horizontal"></span> TypeScript&nbsp;
+      </p>
+    </div>
+  </div>
+  <div class="tech-skill">
+    <svg class="icon-surprise" width="16" height="16">
+      <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-surprise"></use>
+    </svg>
+  </div>
+  <div class="marquee marquee-tilted">
+    <div class="marquee-inner">
+      <p class="marquee-line tilted">
+        <span class="dot dot-tilted"></span> TypeScript
+        <span class="dot dot-tilted"></span> React Native
+        <span class="dot dot-tilted"></span> Node.js
+        <span class="dot dot-tilted"></span> React
+        <span class="dot dot-tilted"></span> JavaScript
+        <span class="dot dot-tilted"></span> HTML/CSS&nbsp;
+      </p>
+    </div>
   </div>
 </section>
 
-      <section class="skills">
+      <section id="projects" class="my-projects">
   <div class="container">
-    <p>student section developer</p>
+    <h2 class="title-projects">my <span class="green-color">projects</span></h2>
+    <ul class="projects-list">
+      <li class="list-item">
+
+        <div class="card-text">
+          <p class="teck-skill">React, JavaScript, Node JS, Git</p>
+          <div class="container-title">
+            <h3 class="name-page">transforming your body</h3>
+            <a
+              href="https://power-pulse.f.goit.study/welcome/"
+              class="visit-link"
+              target="_blank"
+              >visit
+              <svg class="icon" width="24" height="24">
+                <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-arrow-on-the-btn"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="list-item">
+
+        <div class="card-text">
+          <p class="teck-skill">React, JavaScript, Node JS, Git</p>
+          <div class="container-title">
+            <h3 class="name-page">mimino</h3>
+            <a
+              href="https://dmytostas.github.io/mimino/"
+              class="visit-link"
+              target="_blank"
+              >visit
+              <svg class="icon" width="24" height="24">
+                <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-arrow-on-the-btn"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="list-item">
+
+        <div class="card-text">
+          <p class="teck-skill">React, JavaScript, Node JS, Git</p>
+          <div class="container-title">
+            <h3 class="name-page">reviving the traditional</h3>
+            <a
+              href="https://vyshyvanka-vibes.f.goit.study/"
+              class="visit-link"
+              target="_blank"
+              >visit
+              <svg class="icon" width="24" height="24">
+                <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-arrow-on-the-btn"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="list-item">
+
+        <div class="card-text">
+          <p class="teck-skill">React, JavaScript, Node JS, Git</p>
+          <div class="container-title">
+            <h3 class="name-page">organic vegetables</h3>
+            <a
+              href="https://goitstudentsworks.github.io/106_html-css_Siriulas/"
+              class="visit-link"
+              target="_blank"
+              >visit
+              <svg class="icon" width="24" height="24">
+                <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-arrow-on-the-btn"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="list-item">
+
+        <div class="card-text">
+          <p class="teck-skill">React, JavaScript, Node JS, Git</p>
+          <div class="container-title">
+            <h3 class="name-page">wallet webservice</h3>
+            <a
+              href="https://wallet-goit-fsv.netlify.app/"
+              class="visit-link"
+              target="_blank"
+              >visit
+              <svg class="icon" width="24" height="24">
+                <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-arrow-on-the-btn"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="list-item">
+
+        <div class="card-text">
+          <p class="teck-skill">React, JavaScript, Node JS, Git</p>
+          <div class="container-title">
+            <h3 class="name-page">chego jewelry</h3>
+            <a
+              href="https://chegojewelry.com/en"
+              class="visit-link"
+              target="_blank"
+              >visit
+              <svg class="icon" width="24" height="24">
+                <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-arrow-on-the-btn"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="list-item">
+
+        <div class="card-text">
+          <p class="teck-skill">React, JavaScript, Node JS, Git</p>
+          <div class="container-title">
+            <h3 class="name-page">get body in shape</h3>
+            <a
+              href="https://energy-flow.f.goit.study/"
+              class="visit-link"
+              target="_blank"
+              >visit
+              <svg class="icon" width="24" height="24">
+                <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-arrow-on-the-btn"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="list-item">
+
+        <div class="card-text">
+          <p class="teck-skill">React, JavaScript, Node JS, Git</p>
+          <div class="container-title">
+            <h3 class="name-page">fresh harvest box</h3>
+            <a
+              href="https://z9877969.github.io/fruits_landing/"
+              class="visit-link"
+              target="_blank"
+              >visit
+              <svg class="icon" width="24" height="24">
+                <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-arrow-on-the-btn"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="list-item">
+
+        <div class="card-text">
+          <p class="teck-skill">React, JavaScript, Node JS, Git</p>
+          <div class="container-title">
+            <h3 class="name-page">turn your business</h3>
+            <a
+              href="https://tate-t.github.io/StarlightStudio/"
+              class="visit-link"
+              target="_blank"
+              >visit
+              <svg class="icon" width="24" height="24">
+                <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-arrow-on-the-btn"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="list-item">
+
+        <div class="card-text">
+          <p class="teck-skill">React, JavaScript, Node JS, Git</p>
+          <div class="container-title">
+            <h3 class="name-page">discover the joy of learning</h3>
+            <a
+              href="https://tkachenkokaterina.github.io/english-excellence/"
+              class="visit-link"
+              target="_blank"
+              >visit
+              <svg class="icon" width="24" height="24">
+                <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-arrow-on-the-btn"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <button type="button" class="load-more">Load More</button>
   </div>
 </section>
 
-      <section class="projects">
+      <section class="sect-benefits" id="benefits">
   <div class="container">
-    <p>student section developer</p>
-  </div>
-</section>
+    <h2 class="benefits-title">
+      <span class="green-color">Benefits</span> of working with me
+    </h2>
 
-      <section class="benefits">
-  <div class="container">
-    <p>student section developer</p>
+    <img
+      class="decor-img"
+      src="data:image/png;base64,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"
+      srcset="data:image/png;base64,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 1x, /project-CoreStackUa/assets/desk_benefits_decor_bg@2x-BP9TcXRE.png 2x"
+      alt="decor-background"
+    />
+
+    <ul class="benefits-section-list">
+      <li class="benefits-section-item">
+        <div class="benefits-item-icon">
+          <svg width="24" height="24" data-icon="icon-expertise-icon">
+            <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-user-01"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-section-title">Expertise</h3>
+        <p>
+          With extensive experience in development, I have a deep understanding
+          of programming and website development.
+        </p>
+      </li>
+      <li class="benefits-section-item">
+        <div class="benefits-item-icon">
+          <svg width="24" height="24" data-icon="icon-featured-icon">
+            <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-message-chat-circle"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-section-title">Communication</h3>
+        <p>
+          Understanding your needs and wants is my priority and I am always
+          available for discussions and open to corrections.
+        </p>
+      </li>
+      <li class="benefits-section-item">
+        <div class="benefits-item-icon">
+          <svg width="24" height="24" data-icon="icon-art-icon">
+            <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-brush-01"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-section-title">Art</h3>
+        <p>
+          Thanks to my creative nature, I am ready to accept challenges and help
+          you bring your ideas to life.
+        </p>
+      </li>
+      <li class="benefits-section-item">
+        <div class="benefits-item-icon">
+          <svg width="24" height="24" data-icon="icon-urgent-execution-icon">
+            <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-hourglass-02"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-section-title">Urgent execution</h3>
+        <p>
+          I understand how important time is to you. Ready to work quickly and
+          efficiently, without reducing the quality of work.
+        </p>
+      </li>
+    </ul>
   </div>
 </section>
 
       <section class="faq">
-  <div class="container">
-    <p>student section developer</p>
+  <div class="container faq-container">
+    <div class="faq-start-container">
+      <h2 class="title-faq">
+        frequently asked <span class="green-color">question</span>
+      </h2>
+      <img
+        src="/project-CoreStackUa/assets/desk_faq_decor_bg-D-s7ycDI.png"
+        alt="bg-stars"
+        width="526"
+        height="408"
+        srcset="/project-CoreStackUa/assets/desk_faq_decor_bg@2x-A72yOHc5.png"
+      />
+    </div>
+    <ul class="accordion-list">
+      <li class="ac">
+        <button type="button" class="ac-trigger">
+          <span class="ac-btn-text">
+            What programming languages are most often used in your project?
+          </span>
+          <svg class="ac-icon-up" width="32" height="32">
+            <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-button-up"></use>
+          </svg>
+        </button>
+        <div class="ac-panel">
+          <p class="ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <button type="button" class="ac-trigger">
+          <span class="ac-btn-text"
+            >What are the deadlines for the project?</span
+          >
+          <svg class="ac-icon-up" width="32" height="32">
+            <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-button-up"></use>
+          </svg>
+        </button>
+        <div class="ac-panel">
+          <p class="ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <button type="button" class="ac-trigger">
+          <span class="ac-btn-text">What payment methods do you accept?</span>
+          <svg class="ac-icon-up" width="32" height="32">
+            <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-button-up"></use>
+          </svg>
+        </button>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <button type="button" class="ac-trigger">
+          <span class="ac-btn-text">How can I contact you?</span>
+          <svg class="ac-icon-up" width="32" height="32">
+            <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-button-up"></use>
+          </svg>
+        </button>
+        <div class="ac-panel">
+          <p class="ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <button type="button" class="ac-trigger">
+          <span class="ac-btn-text">Do you provide advice or support?</span>
+          <svg class="ac-icon-up" width="32" height="32">
+            <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-button-up"></use>
+          </svg>
+        </button>
+        <div class="ac-panel">
+          <p class="ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <button type="button" class="ac-trigger">
+          <span class="ac-btn-text">
+            What does the process of developing a software product look like
+            from idea to implementation?
+          </span>
+          <svg class="ac-icon-up" width="32" height="32">
+            <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-button-up"></use>
+          </svg>
+        </button>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
-      <section class="reviews">
+      <!-- --------------Section Reviews-------------- -->
+
+<section class="reviews-section">
   <div class="container">
-    <p>student section developer</p>
+    <h2 class="reviews-title">Reviews</h2>
+
+    <div class="swiper" tabindex="0">
+      <ul class="swiper-wrapper" id="reviews-list"></ul>
+    </div>
+
+    <div class="reviews-container-btn">
+      <button id="prev-button" class="reviews-nav-button arrow-left" disabled>
+        <svg width="24" height="24">
+          <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-arrow-default"></use>
+        </svg>
+      </button>
+      <button id="next-button" class="reviews-nav-button">
+        <svg width="24" height="24">
+          <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-arrow-default"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
 
-      <section class="together">
-  <div class="container">
-    <p>student section developer</p>
+      <section id="contacts" class="together">
+  <div class="container together-container">
+    <h2 class="together-title">
+      let’s <span class="together-part">work together</span>
+    </h2>
+    <div class="contacts">
+      <h3 class="contacts-title">
+        Contact me to transform your ideas into exceptional solutions.
+      </h3>
+      <ul class="contacts-list">
+        <li class="contacts-item">
+          <a href="tel:+380904567890" class="contacts-link">
+            <svg class="contacts-icon" width="24" height="24">
+              <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-phone"></use></svg
+            >+38 090 456 78 90</a
+          >
+        </li>
+        <li class="contacts-item">
+          <a href="mailto:lloydjefferson@gmail.com" class="contacts-link">
+            <svg class="contacts-icon" width="24" height="24">
+              <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-icon-letter"></use></svg
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="contacts-item">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=USA,New+York"
+            target="_blank"
+            class="contacts-link"
+          >
+            <svg class="contacts-icon" width="24" height="24">
+              <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-icon-location"></use></svg
+            >USA, New York</a
+          >
+        </li>
+      </ul>
+    </div>
+    <form id="contact-form" class="form">
+      <div class="form-wrapper">
+        <div class="input-wrapper">
+          <input
+            class="form-user-input"
+            type="email"
+            id="form-email"
+            name="email"
+            required
+            placeholder="Your email*"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          />
+          <span class="invalid-input"
+            >Invalid data. Please enter correct information.</span
+          >
+          <svg
+            class="email-valid-icon"
+            id="email-valid-icon"
+            width="20"
+            height="20"
+          >
+            <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#icon-ep_success-filled"></use>
+          </svg>
+        </div>
+        <textarea
+          class="form-comment"
+          name="message"
+          id="user-comment"
+          required
+          placeholder="Message"
+        ></textarea>
+        <span class="invalid-text-area"
+          >Invalid data. Please enter correct information.</span
+        >
+
+        <button class="form-btn" type="submit">SEND MESSAGE</button>
+      </div>
+    </form>
   </div>
 </section>
+
+      <div class="sidebar hidden-bar">
+  <form class="sidebar-form">
+    <label>
+      <input
+        class="visually-hidden"
+        type="radio"
+        name="color"
+        value="classic"
+      />
+      <span class="checkbox-wrapper">
+        <span class="white-span left-span"></span>
+        <span class="green-span right-span"></span>
+        <svg width="20" height="20" class="checked-picture">
+          <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#checked-icon"></use>
+        </svg>
+      </span>
+    </label>
+    <label>
+      <input class="visually-hidden" type="radio" name="color" value="dark" />
+      <span class="checkbox-wrapper">
+        <span class="black-span left-span"></span>
+        <span class="green-span right-span"></span>
+        <svg width="20" height="20" class="checked-picture">
+          <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#checked-icon"></use>
+        </svg>
+      </span>
+    </label>
+    <label>
+      <input class="visually-hidden" type="radio" name="color" value="blue" />
+      <span class="checkbox-wrapper">
+        <span class="blue-span left-span"></span>
+        <span class="gold-span right-span"></span>
+        <svg width="20" height="20" class="checked-picture">
+          <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#checked-icon"></use>
+        </svg>
+      </span>
+    </label>
+    <label>
+      <input
+        class="visually-hidden"
+        type="radio"
+        name="color"
+        value="green-dark"
+      />
+      <span class="checkbox-wrapper">
+        <span class="green-dark-span left-span"></span>
+        <span class="pink-span right-span"></span>
+        <svg width="20" height="20" class="checked-picture">
+          <use href="/project-CoreStackUa/assets/sprite-D7eFlXk_.svg#checked-icon"></use>
+        </svg>
+      </span>
+    </label>
+  </form>
+
+  <button class="side-button" type="button">></button>
+</div>
 
     </main>
 
-    <footer class="footer">
+    <footer>
+      <section class="footer">
   <div class="container">
-    <p>student section developer</p>
+    <div class="footer-container">
+      <a class="logo" href="./index.html"
+        >Lloyd<span class="green-color">Jefferson.</span></a
+      >
+      <ul class="footer-nav">
+        <li>
+          <a
+            href="https://www.instagram.com/goitclub/"
+            class="footer-nav-link"
+            target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/goITclub/"
+            class="footer-nav-link"
+            target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/school/"
+            class="footer-nav-link"
+            target="_blank"
+            >Linkedin</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/Nickolay1990/core-stack"
+            class="footer-nav-link"
+            target="_blank"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="right">&#169; Copyright 2024. Made by LloydJefferson</p>
   </div>
-</footer>
+</section>
 
+    </footer>
+    <!-- scroll__up -->
+<button class="scroll__up">
+  <svg
+    class="scroll__up-svg"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <defs>
+      <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#00f0ff">
+          <animate
+            attributeName="stop-color"
+            values="#00f0ff; #ff00ff; #00ff88; #00f0ff"
+            dur="6s"
+            repeatCount="indefinite"
+          />
+        </stop>
+        <stop offset="100%" stop-color="#ff00ff">
+          <animate
+            attributeName="stop-color"
+            values="#ff00ff; #00ff88; #00f0ff; #ff00ff"
+            dur="6s"
+            repeatCount="indefinite"
+          />
+        </stop>
+      </linearGradient>
+    </defs>
+
+    <circle
+      class="scroll__up-svg-path"
+      cx="50"
+      cy="50"
+      r="45"
+      stroke="url(#gradientStroke)"
+    />
+    <polyline points="35,55 50,40 65,55" stroke="white" />
+    <line x1="50" y1="40" x2="50" y2="70" stroke="white" />
+  </svg>
+</button>
+<!-- surprise -->
+<div id="videoModal" class="modal-surprise">
+  <div class="modal-content-surprise">
+    <span class="close">&times;</span>
+    <iframe id="videoFrame" width="560" height="315" allowfullscreen></iframe>
+  </div>
+</div>
 
   </body>
 </html>
