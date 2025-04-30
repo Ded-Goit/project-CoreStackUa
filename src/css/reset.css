@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-}
-
 h1,
 h2,
 h3,
@@ -16,8 +12,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
-ul,
-ol {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -28,59 +23,12 @@ a {
   text-decoration: none;
 }
 
-img,
-video {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-button,
-label {
+button {
   cursor: pointer;
 }
 
-textarea {
-  resize: none;
-}
-/**
-  Нормализация блочной модели
- */
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-/**
-  Наследуем свойства шрифт для полей ввода
- */
-input,
-textarea,
-select,
-button {
-  font: inherit;
-}
-
-/**
-  Плавный скролл
- */
-html,
-:has(:target) {
-  scroll-behavior: smooth;
-}
-
-/**
-  Чиним баг задержки смены цвета при взаимодействии с svg-элементами
- */
-svg * {
-  transition-property: fill, stroke;
-}
-
-/**
-  Приведение рамок таблиц в классический 'collapse' вид
- */
-:where(table) {
-  border-collapse: collapse;
-  border-color: currentColor;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
